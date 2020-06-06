@@ -10,35 +10,55 @@
   margin-top: 30px;
 }
 
+header {
+  justify-content: center;
+  display: flex;
+  background-image: url('https://www.crows.org/resource/resmgr/virtual_series_webinars/Deep_Learning_Webinar_Banner.png');
+  background-size: 900px;
+
+}
+
+h1 {
+  margin-right: 5em;
+  margin-left: 12em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
 nav {
-  width: 300px;
-  margin: 0 auto;
-  background: #282c34;
-  height: 70px;
+  width: 400px;
+  margin-right: 2em;
   line-height: 70px;
+  display: flex;
+  float: right;
 }
 
 nav ul li {
   display: inline;
   list-style-type: none;
+  width: 100px;
   text-align: center;
-  padding: 30px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+
+
 }
 
 nav ul li a {
   margin: 50px 0;
   font-weight: bold;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
 nav ul li a:hover {
-  color: white;
+  color: #dee2e6;
   text-decoration: none;
 }
 
 table {
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 .App-link {

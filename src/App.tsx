@@ -10,17 +10,19 @@ class App extends React.Component<RouteComponentProps<any>> {
   public render() {
     return (
       <div>
-        <nav>
+      <header><h1>Your Release Tracker</h1>
+       <nav>
           <ul>
             <li>
               <Link to={'/'}> Home </Link>
             </li>
-
             <li>
-              <Link to={'/create'}> Create Customer </Link>
+              <Link to={'/create'}> Add a Release </Link>
             </li>
           </ul>
         </nav>
+      </header>
+       
 
         <Switch>
           <Route path={'/'} exact component={Home} />
