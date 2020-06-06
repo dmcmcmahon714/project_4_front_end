@@ -14,13 +14,13 @@ export default class Home extends React.Component<RouteComponentProps, IState> {
     }
 
     public componentDidMount(): void {
-        axios.get(`http://localhost:3000/api/entries`).then(data => {
+        axios.get(`https://music-release-api.herokuapp.com/entries/`).then(data => {
             this.setState({ entries: data.data })
         })
     }
 
     public deleteEntry(id: number) {
-        axios.delete(`http://localhost:3000/api/entries/${id}`).then(data => {
+        axios.delete(`https://music-release-api.herokuapp.com/entries/${id}`).then(data => {
             const index = this.state.entries.findIndex(entry => entry.id === id);
             this.state.entries.splice(index, 1);
             this.props.history.push('/');

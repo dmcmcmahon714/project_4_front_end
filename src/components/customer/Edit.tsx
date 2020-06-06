@@ -27,7 +27,7 @@ class EditCustomer extends React.Component<RouteComponentProps<any>, IFormState>
     }
 
     public componentDidMount(): void {
-        axios.get(`http://localhost:3000/api/entries/${this.state.id}`).then(data => {
+        axios.get(`https://music-release-api.herokuapp.com/entries/${this.state.id}`).then(data => {
             this.setState({ entry: data.data });
         })
     }
@@ -35,7 +35,7 @@ class EditCustomer extends React.Component<RouteComponentProps<any>, IFormState>
     private processFormSubmission = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
         e.preventDefault();
         this.setState({ loading: true });
-        axios.patch(`http://localhost:3000/api/entries/${this.state.id}`, this.state.values).then(data => {
+        axios.patch(`https://music-release-api.herokuapp.com/entries/${this.state.id}`, this.state.values).then(data => {
             this.setState({ submitSuccess: true, loading: false })
             setTimeout(() => {
                 this.props.history.push('/');
