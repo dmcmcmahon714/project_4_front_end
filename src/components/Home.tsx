@@ -43,11 +43,12 @@ export default class Home extends React.Component<RouteComponentProps, IState> {
                 <div className="container">
                     <div className="row">
                         <table className="sortable table table-bordered" id="usersTable">
-                            <thead className="thead-light">
+                            <thead>
                                 <tr>
                                     <th scope="col">Artist</th>
                                     <th scope="col">Title</th>
                                     <th scope="col">Date</th>
+                                    <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>

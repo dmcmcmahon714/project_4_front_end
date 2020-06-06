@@ -20,6 +20,10 @@ header {
 
 }
 
+tr.item {
+  text-align: center;
+}
+
 h1 {
   margin-right: 5em;
   margin-left: 12em;
@@ -40,6 +44,12 @@ a {
   border: solid #e3e2de 1px;
   border-radius: .5em;
   padding: 10px;
+}
+
+thead {
+background: rgb(0,112,255);
+background: linear-gradient(0deg, rgba(0,112,255,0.5410539215686274) 37%, rgba(9,100,121,0.9976365546218487) 71%);
+text-align: center;
 }
 
 nav ul li {
