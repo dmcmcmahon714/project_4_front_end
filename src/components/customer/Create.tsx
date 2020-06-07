@@ -2,6 +2,7 @@ import * as React from 'react';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
 import axios from 'axios';
 
+
 export interface IValues {
     Artist: string,
     Title: string,
@@ -57,12 +58,12 @@ class Create extends React.Component<RouteComponentProps, IFormState> {
     public render() {
         const { submitSuccess, loading } = this.state;
         return (
-            <div>
-                <div className={"col-md-12 form-wrapper"}>
-                    <h2> Create Post </h2>
+            <div className="formwrapper">
+                <div>
+                
                     {!submitSuccess && (
-                        <div className="alert alert-info" role="alert">
-                            Fill the form below to create a new post
+                        <div className="addformheading" role="alert">
+                            Add a Release
                     </div>
                     )}
 
@@ -90,8 +91,8 @@ class Create extends React.Component<RouteComponentProps, IFormState> {
 
 
                         <div className="form-group col-md-4 pull-right">
-                            <button className="btn btn-success" type="submit">
-                                Create Release
+                            <button className="createbutton" type="submit">
+                                Add Release
               </button>
                             {loading &&
                                 <span className="fa fa-circle-o-notch fa-spin" />
