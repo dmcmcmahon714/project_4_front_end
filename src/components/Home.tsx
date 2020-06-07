@@ -33,14 +33,11 @@ export default class Home extends React.Component<RouteComponentProps, IState> {
 
 
         return (
-            <div>
-                {entries.length === 0 && (
-                    <div className="text-center">
-                        <h2>No entry found at the moment</h2>
-                    </div>
-                )}
-
+           
                 <div className="container">
+                <div className="aside">
+                <iframe src="https://open.spotify.com/embed/playlist/7nlBAoBPr3hZ0xDkAQpMF8" width="300" height="380"  allow="encrypted-media"></iframe>
+                </div>
                     <div className="row">
                         <table className="sortable table table-bordered" id="usersTable">
                             <thead>
@@ -72,7 +69,7 @@ export default class Home extends React.Component<RouteComponentProps, IState> {
                     </div>
                 </div>
 
-            </div>
+           
         )
     }
 }

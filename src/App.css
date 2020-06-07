@@ -15,9 +15,11 @@ header {
   display: flex;
   background-image: url('https://www.crows.org/resource/resmgr/virtual_series_webinars/Deep_Learning_Webinar_Banner.png');
   background-size: 900px;
-  
+}
 
-
+#root {
+background: rgb(16,9,121);
+background: linear-gradient(0deg, rgba(16,9,121,1) 49%, rgba(148,200,255,1) 60%);
 }
 
 tr.item {
@@ -68,6 +70,14 @@ nav ul li {
   font-family: 'Rokkitt', serif;
   font-size: 20px;
 
+}
+
+.aside {
+  display: flex;
+  float: right;
+  width: 300px;
+  margin-left: 5em;
+  margin-top: 2em;
 }
 
 nav ul li a {
@@ -134,10 +144,12 @@ h2 a {
 .container {
     text-align: left;
     overflow: hidden;
-    width: 80%;
-    margin: 0 auto;
-  display: table;
-  padding: 0 0 8em 0;
+    width: 100%;
+  
+    display: table;
+    margin-left: 25em;
+   
+
 }
 
 .container td, .container th {
