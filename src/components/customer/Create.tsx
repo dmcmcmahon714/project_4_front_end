@@ -75,7 +75,7 @@ class Create extends React.Component<RouteComponentProps, IFormState> {
 
                     <form id={"create-post-form"} onSubmit={this.processFormSubmission} noValidate={true}>
                         <div className="form-group col-md-12">
-                            <label htmlFor="artist"> Arist </label>
+                            <label htmlFor="artist"> Artist </label>
                             <input type="text" id="artist" onChange={(e) => this.handleInputChanges(e)} name="artist" className="form-control" placeholder="Enter Artist" />
                         </div>
 
