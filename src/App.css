@@ -18,6 +18,19 @@
 
 }
 
+.editheading {
+  font-family: 'Rokkitt', serif;
+  font-size: 30px;
+  margin-left: 0em;
+  margin-top: 2em;
+  margin-right: 7em;
+
+}
+
+.editlabel {
+  text-align: left;
+}
+
 header {
   justify-content: center;
   display: flex;
