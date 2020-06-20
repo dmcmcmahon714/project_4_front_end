@@ -1,21 +1,19 @@
-This is a full stack web forum built with Ruby on Rails using the devise gem and postgresQL. Commenting and likes with full CRUD functionality make an ideal environment for music discussion. 
+This app allows a user to keep track of when their favorite albums will be coming out. The API was built with Ruby on Rails and PostgresQL. Fake data provided by faker. The back end connects to the client side with rack-cors. The front end was built in React. 
 
-Feature: 
-
-User Authentication 
-Posts 
-Likes 
-Comments 
-Tag Sorting
-
-
+Features: 
+Add releases 
+Edit Releases 
+Delete Releases 
+Embedded new release spotify player
 
 Technoligies Used:
 
-Ruby on Rails
-Devise
-SASS-rails
-PostgresQL
-Simple Form
-Faker
-Bootstrap
+Node.js
+CORS
+Express
+Mongoose
+Sessions
+React
+React-Bootstrap
+React-Router-DOM
+
